@@ -1,19 +1,26 @@
 
 body {
-    font-family: sans-serif;
+    font-family: Roboto Light, Roboto, Helvetica, sans-serif;
+    background: url('/images/bg_about_us.png') no-repeat fixed center/cover;
+    margin: 0;
 }
+
 .logo {
     display: inline-block;
     vertical-align: middle;
     width: 120px;
     height: 70%;
-    /*border-radius: 50%;*/
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin: auto;
 }
+
 .logo img {
     height: auto;
     width: 100%;
+}
+
+#navbar {
+    margin-top: 0;
 }
 .navbarlinks {
     list-style: none;
@@ -45,7 +52,7 @@ body {
 
 .dropdown {
     float: right;
-    overflow: hidden;
+    /*overflow: auto;*/
 }
 
 ul .dropdown {
@@ -67,17 +74,20 @@ ul {
 ul li {
     display: inline-block;
     position: relative;
+    overflow: hidden;
 }
 
 ul li a {
-    display: block;
+    display: inline-block;
     padding: 20px 25px;
     color: #FFF;
     text-decoration: none;
+
 }
 
 ul li ul.dropdown li {
     display: block;
+
 }
 
 ul li.dropdown {
@@ -91,6 +101,86 @@ ul li ul.dropdown {
     display: none;
 }
 
-ul li:hover ul.dropdown {
+.dropdown:hover ul.dropdown {
     display: block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+/*main-content*/
+.koda-img-top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    width: 40%;
+}
+
+.about-us-heading {
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+.class-pic {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 55%;
+}
+
+#class-pic-id {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    border-radius: 5%;
+}
+.about-us-dummy-text {
+    display: block;
+    margin: auto;
+    max-width: 55%;
+    text-align: justify;
 }

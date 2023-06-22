@@ -8,11 +8,8 @@
         <link rel="stylesheet" href="about_us_style.css">
     </head>
     <body>
+    <header>
         <nav id="navbar">
-<!--                <div class="logo">-->
-<!--                    <a class="about-page" href="about_us_page.html">-->
-<!--                    <img src="images/koda_logo.svg" class="logo" alt="logo for Koda camp">-->
-<!--                </div>-->
             <ul class="navbarlinks">
                 <li>
                     <div class="logo">
@@ -20,26 +17,48 @@
                             <img src="../images/koda_logo.svg" class="logo" alt="logo for Koda camp"></a>
                     </div>
                 </li>
-                <li>
+                <ul>
                     <div class="navbarpages">
                         <li><a href="home_page.html">Home</a></li>
                         <li><a href="about_us_page.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact_us_page.html">Contact Us</a></li>
-                        &nbsp&nbsp&nbsp
-                        <li><a href="#">Pods Icles</a></li>
                         <li>
-                            <a href="#">&#9660</a>
-                            <ul class="dropdown">
-                                <li><a href="#">Change Profile</a></li>
-                                <li><a href="#">Change Password</a></li>
-                                <li><a href="#">Logout</a></li>
-                            </ul>
+                            <div class="dropdown">
+                                <button class="dropbtn">Pods Icles &nbsp&nbsp&#9660
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Change Profile</a>
+                                    <a href="#">Change Password</a>
+                                    <a href="#">Logout</a>
+                                </div>
+<!--                            <a href="#">Pods Icles &nbsp&nbsp&#9660</a>-->
+<!--                            <ul class="dropdown">-->
+<!--                                <li><a href="#">Change Profile</a></li>-->
+<!--                                <li><a href="#">Change Password</a></li>-->
+<!--                                <li><a href="#">Logout</a></li>-->
+<!--                            </ul>-->
                         </li>
                     </div>
-                </li>
+                </ul>
             </ul>
-
         </nav>
+    </header>
+<!--ABOUT US-->
+    <section id="about-us" class="about-us">
+        <div class="container">
+            <div class="koda-img-top"><img src="/images/koda_logo.svg" alt="koda-image-top"></div>
+            <div class="about-us-top">
+                <h1 class="about-us-heading">About Us</h1>
+            </div>
+            <div class="class-pic"><img src="/images/class-pic.png" alt="class-pic" id="class-pic-id"></div>
+            <div class="about-us-dummy-text">
+                <p><strong>Lorem ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p><br>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p><br>
+            </div>
+        </div>
+    </section>
     </body>
 </html>
