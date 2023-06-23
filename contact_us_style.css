@@ -1,8 +1,7 @@
 
 body {
     font-family: Roboto Light, Roboto, Helvetica, sans-serif;
-    background:
-    margin: 0px;
+    margin: 0;
 }
 
 .logo {
@@ -20,7 +19,7 @@ body {
 }
 
 #navbar {
-    margin-top: 0;
+    margin-top: 2px;
 }
 .navbarlinks {
     list-style: none;
@@ -103,7 +102,6 @@ ul li ul.dropdown {
 
 .dropdown:hover ul.dropdown {
     display: block;
-
 }
 
 .dropdown-content {
@@ -111,7 +109,7 @@ ul li ul.dropdown {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -154,15 +152,95 @@ ul li ul.dropdown {
     box-sizing: border-box;
 }
 .header {
-    display: box;
-    background-image: url("/images/phone.jpeg");
+    display: inline-block;
+    background-image: url("/images/contact_us.jpeg");
     background-size: cover;
-    background-position: right 0px;
+    background-position: right 0;
     padding: 0 20px;
     text-align: center;
     width: 100%;
     max-height: 500px;
-    min-height: 275px;
+    min-height: 400px;
     height: 60vw;
-    backdrop-filter: blur(5px);
+    margin-top: -85px;
+    margin-bottom: 60px;
+}
+
+
+#contact-us-text{
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    padding: 200px;
+    width: 100%;
+    margin-bottom: 35px;
+    position: relative;
+    display: block;
+}
+
+section.all-forms.conversation {
+    padding: 100px;
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 35px;
+    position: relative;
+    display: block;
+}
+
+/*.all-forms #bottom-bg{*/
+/*    display: inline-box;*/
+/*    background-image: url("/images/worldwide.png");*/
+/*    background-size: cover;*/
+/*    padding: 0 20px;*/
+/*    text-align: center;*/
+/*    width: 100%;*/
+/*    max-height: 500px;*/
+/*    min-height: 400px;*/
+/*    height: 60vw;*/
+/*    margin-top: 700px;*/
+/*    margin-bottom: -69px;*/
+/*}*/
+
+h2 {
+    text-align: center;
+}
+
+#contact-info {
+    text-align: center;
+}
+
+.contact-forms-left {
+    margin-left: 15%;
+    float: left;
+
+}
+
+.contact-forms-right {
+    margin-right: 15%;
+    float: right;
+}
+
+div form input {
+    display: inline-block;
+    border: #141414 2px;
+    border-radius: 5px;
+    border-style: solid;
+    width: 250px;
+    padding: 12px 20px;
+}
+
+div form textarea .contact-forms-right {
+    display: inline-block;
+    border-color: red;
+    border: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    padding: 12px 20px;
+}
+
+::placeholder {
+    opacity: 50;
+    color: grey;
 }
