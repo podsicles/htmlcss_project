@@ -15,11 +15,13 @@ body {
     height: 70%;
     /*overflow: hidden;*/
     margin: auto;
+
 }
 
 .logo img {
     height: auto;
     width: 100%;
+    float: left;
 }
 
 #navbar {

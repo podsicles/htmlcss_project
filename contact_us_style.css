@@ -244,3 +244,13 @@ div form textarea .contact-forms-right {
     opacity: 50;
     color: grey;
 }
+
+/*footer*/
+
+.footer-bottom {
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 0.875em;
+    color: grey;
+    text-align: center;
+}
